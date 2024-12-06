@@ -4,6 +4,7 @@ import { OrbitControls } from "three-stdlib";
 export function createBg() {
   // Scene
   const scene = new THREE.Scene();
+  scene.background = new THREE.Color(0x0b0f2b);
 
   // Camera
   const camera = new THREE.PerspectiveCamera(
@@ -12,7 +13,7 @@ export function createBg() {
     0.1,
     100
   );
-  camera.position.set(1, 1, 2);
+  camera.position.set(5, 1, 5);
 
   // Renderer
   const renderer = new THREE.WebGLRenderer();
@@ -21,26 +22,36 @@ export function createBg() {
   document.body.appendChild(renderer.domElement);
 
   // Geometry
-  const boxGeometry = new THREE.BoxGeometry();
-  const sphereGeometry = new THREE.SphereGeometry(0.5, 32, 16);
-  const dodecahedronGeometry = new THREE.DodecahedronGeometry();
+  const particlesGeometry = new THREE.BufferGeometry();
+  const count = 1800;
+  const positionArray = new Float32Array(count * 3);
+  const colorArray = new Float32Array(count * 3);
+
+  for (let i = 0; i < count * 3; i++) {
+    positionArray[i] = (Math.random() - 0.5) * 15;
+    colorArray[i] = Math.random();
+  }
+
+  particlesGeometry.setAttribute(
+    "position",
+    new THREE.BufferAttribute(positionArray, 3)
+  );
 
   // Material
-  const material = new THREE.MeshNormalMaterial({
-    // wireframe: true,
+  const particlesTexture = new THREE.TextureLoader().load(
+    "/assets/images/star.png"
+  );
+  const pointMaterial = new THREE.PointsMaterial({
+    size: 0.02,
+    sizeAttenuation: true,
+    transparent: true,
+    alphaMap: particlesTexture,
+    depthWrite: false,
   });
 
   // Mesh
-  const box = new THREE.Mesh(boxGeometry, material);
-  const sphere = new THREE.Mesh(sphereGeometry, material);
-  const dodecahedron = new THREE.Mesh(dodecahedronGeometry, material);
-  box.position.x = 3;
-  dodecahedron.position.x = -3;
-  scene.add(box, sphere, dodecahedron);
-
-  // Light
-  const ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
-  scene.add(ambientLight);
+  const particles = new THREE.Points(particlesGeometry, pointMaterial);
+  scene.add(particles);
 
   // Controls
   const controls = new OrbitControls(camera, renderer.domElement);
@@ -49,6 +60,13 @@ export function createBg() {
   // Animation
   const animate = () => {
     controls.update();
+
+    const time = Date.now() * 0.00005;
+    const radius = 5;
+    camera.position.x = radius * Math.cos(time);
+    camera.position.z = radius * Math.sin(time);
+    camera.lookAt(scene.position);
+
     renderer.render(scene, camera);
     requestAnimationFrame(animate);
   };
