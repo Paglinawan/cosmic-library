@@ -1,43 +1,51 @@
 import React from "react";
+import classNames from "classnames";
 
 export interface ButtonProps {
-  /** Is this the principal call to action on the page? */
-  primary?: boolean;
-  /** What background color to use */
-  backgroundColor?: string;
-  /** How large should the button be? */
-  size?: "small" | "medium" | "large";
-  /** Button contents */
+  /** カラーを選択 */
+  color?: "primary" | "secondary";
+  /** サイズを選択 */
+  size?: "md";
+  /** タイプを選択 */
+  type?: "filled" | "outlined";
+  /** 無効化の有無を選択 */
+  disabled?: boolean;
+  /** ボタンテキストを入力 */
   label: string;
-  /** Optional click handler */
+  /** クリックした後のアクション */
   onClick?: () => void;
 }
 
-/** Primary UI component for user interaction */
 export const Button = ({
-  primary = false,
-  size = "medium",
-  backgroundColor,
+  color = "primary",
+  size = "md",
+  type = "filled",
+  disabled = false,
+  onClick,
   label,
-  ...props
 }: ButtonProps) => {
-  const mode = primary
-    ? "storybook-button--primary"
-    : "storybook-button--secondary";
   return (
     <button
-      type="button"
-      className={["storybook-button", `storybook-button--${size}`, mode].join(
-        " "
+      className={classNames(
+        "inline-block py-2 px-4 rounded focus:tracking-wider transition-all",
+        disabled
+          ? "bg-button-disabled text-disabled"
+          : {
+              "bg-button-primary text-white hover:bg-button-primary-hover":
+                type === "filled" && color === "primary",
+              "bg-button-secondary text-white hover:bg-button-secondary-hover":
+                type === "filled" && color === "secondary",
+              "border border-current text-primary hover:text-primary-hover":
+                type === "outlined" && color === "primary",
+              "border border-current text-secondary hover:text-secondary-hover":
+                type === "outlined" && color === "secondary",
+            }
       )}
-      {...props}
+      onClick={onClick}
+      disabled={disabled}
+      type="button"
     >
       {label}
-      <style jsx>{`
-        button {
-          background-color: ${backgroundColor};
-        }
-      `}</style>
     </button>
   );
 };
