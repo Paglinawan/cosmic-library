@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "get-chromatic-token": "dotenv cross-var 'echo $CHROMATIC_TOKEN'",
+    "chromatic": "npx chromatic --project-token=$(npm run get-chromatic-token --silent)"
   },
   "dependencies": {
     "autoprefixer": "^10.4.20",
