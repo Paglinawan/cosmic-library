@@ -1,5 +1,6 @@
 import * as THREE from "three";
 import { OrbitControls } from "three-stdlib";
+import { getBasePath } from "../utils/getBasePath";
 
 export function createBg() {
   // Scene
@@ -39,7 +40,7 @@ export function createBg() {
 
   // Material
   const particlesTexture = new THREE.TextureLoader().load(
-    "/assets/images/star.png"
+    `${getBasePath()}/assets/images/star.png`
   );
   const pointMaterial = new THREE.PointsMaterial({
     size: 0.02,
