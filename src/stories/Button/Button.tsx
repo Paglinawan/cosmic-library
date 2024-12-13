@@ -5,7 +5,7 @@ export interface ButtonProps {
   /** カラーを選択 */
   color?: "primary" | "secondary";
   /** サイズを選択 */
-  size?: "md";
+  size?: "sm" | "md" | "lg";
   /** タイプを選択 */
   type?: "filled" | "outlined";
   /** 無効化の有無を選択 */
@@ -28,6 +28,11 @@ export const Button = ({
     <button
       className={classNames(
         "inline-block py-2 px-4 rounded focus:tracking-wider transition-all",
+        {
+          "py-1 px-3 text-sm leading-3": size === "sm",
+          "py-2 px-4": size === "md",
+          "py-3 px-5 text-lg rounded-lg": size === "lg",
+        },
         disabled
           ? "bg-button-disabled text-disabled"
           : {
