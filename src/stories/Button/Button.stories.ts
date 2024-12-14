@@ -7,6 +7,7 @@ const meta = {
   component: Button,
   parameters: {
     layout: "centered",
+    backgrounds: { default: "dark" },
   },
   tags: ["autodocs"],
   args: { onClick: fn() },
