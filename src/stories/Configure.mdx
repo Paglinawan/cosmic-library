@@ -1,76 +1,87 @@
 import { Meta } from "@storybook/blocks";
+import Image from "next/image";
+import Stellar from "./images/bg.svg";
 
 <Meta title="CL Stellar" />
 
-<main id="cl-doc">
-  <h1 class="mb-8 font-semibold text-4xl">CL Stellar</h1>
+<Image
+  class="absolute z-10 top-0 left-0 w-full h-full object-cover"
+  src={Stellar}
+  alt="Stories touch you, linking the cosmos."
+/>
+<main id="cl-doc" class="relative z-20">
+  <h1 class="mb-8 font-semibold text-4xl text-inherit">CL Stellar</h1>
   <section>
-    <h2 class="font-semibold text-2xl border-0">❖ Primitive Colors</h2>
+    <h2 class="font-semibold text-2xl border-0 text-inherit">
+      ❖ Primitive Colors
+    </h2>
     <div class="grid gap-6 mt-6">
       <details open>
-        <summary class="font-semibold text-lg border-0">Neutral</summary>
+        <summary class="font-semibold text-lg border-0 cursor-pointer">
+          Neutral
+        </summary>
         <ul class="flex flex-wrap gap-4 mt-2">
-          <li class="relative w-8 h-8 rounded-full bg-cl-neutral-0 transition-transform hover:scale-110 hover:shadow-md border border-cl-neutral-50">
+          <li class="relative w-8 h-8 rounded-full bg-cl-neutral-0 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50 border border-cl-neutral-50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               0
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-neutral-50 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-neutral-50 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               50
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-neutral-100 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-neutral-100 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               100
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-neutral-150 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-neutral-150 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               150
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-neutral-200 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-neutral-200 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               200
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-neutral-300 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-neutral-300 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               300
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-neutral-400 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-neutral-400 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               400
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-neutral-500 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-neutral-500 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               500
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-neutral-600 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-neutral-600 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               600
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-neutral-700 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-neutral-700 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               700
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-neutral-800 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-neutral-800 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               800
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-neutral-900 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-neutral-900 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               900
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-neutral-950 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-neutral-950 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               950
             </div>
@@ -78,69 +89,71 @@ import { Meta } from "@storybook/blocks";
         </ul>
       </details>
       <details open>
-        <summary class="font-semibold text-lg border-0">Red</summary>
+        <summary class="font-semibold text-lg border-0 cursor-pointer">
+          Red
+        </summary>
         <ul class="flex flex-wrap gap-4 mt-2">
-          <li class="relative w-8 h-8 rounded-full bg-cl-red-0 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-red-0 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               0
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-red-50 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-red-50 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               50
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-red-100 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-red-100 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               100
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-red-150 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-red-150 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               150
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-red-200 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-red-200 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               200
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-red-300 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-red-300 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               300
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-red-400 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-red-400 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               400
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-red-500 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-red-500 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               500
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-red-600 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-red-600 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               600
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-red-700 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-red-700 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               700
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-red-800 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-red-800 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               800
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-red-900 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-red-900 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               900
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-red-950 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-red-950 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               950
             </div>
@@ -148,69 +161,71 @@ import { Meta } from "@storybook/blocks";
         </ul>
       </details>
       <details open>
-        <summary class="font-semibold text-lg border-0">Orange</summary>
+        <summary class="font-semibold text-lg border-0 cursor-pointer">
+          Orange
+        </summary>
         <ul class="flex flex-wrap gap-4 mt-2">
-          <li class="relative w-8 h-8 rounded-full bg-cl-orange-0 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-orange-0 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               0
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-orange-50 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-orange-50 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               50
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-orange-100 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-orange-100 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               100
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-orange-150 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-orange-150 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               150
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-orange-200 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-orange-200 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               200
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-orange-300 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-orange-300 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               300
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-orange-400 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-orange-400 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               400
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-orange-500 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-orange-500 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               500
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-orange-600 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-orange-600 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               600
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-orange-700 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-orange-700 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               700
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-orange-800 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-orange-800 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               800
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-orange-900 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-orange-900 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               900
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-orange-950 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-orange-950 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               950
             </div>
@@ -218,69 +233,71 @@ import { Meta } from "@storybook/blocks";
         </ul>
       </details>
       <details open>
-        <summary class="font-semibold text-lg border-0">Yellow</summary>
+        <summary class="font-semibold text-lg border-0 cursor-pointer">
+          Yellow
+        </summary>
         <ul class="flex flex-wrap gap-4 mt-2">
-          <li class="relative w-8 h-8 rounded-full bg-cl-yellow-0 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-yellow-0 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               0
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-yellow-50 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-yellow-50 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               50
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-yellow-100 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-yellow-100 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               100
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-yellow-150 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-yellow-150 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               150
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-yellow-200 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-yellow-200 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               200
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-yellow-300 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-yellow-300 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               300
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-yellow-400 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-yellow-400 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               400
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-yellow-500 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-yellow-500 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               500
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-yellow-600 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-yellow-600 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               600
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-yellow-700 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-yellow-700 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               700
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-yellow-800 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-yellow-800 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               800
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-yellow-900 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-yellow-900 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               900
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-yellow-950 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-yellow-950 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               950
             </div>
@@ -288,69 +305,71 @@ import { Meta } from "@storybook/blocks";
         </ul>
       </details>
       <details open>
-        <summary class="font-semibold text-lg border-0">Green</summary>
+        <summary class="font-semibold text-lg border-0 cursor-pointer">
+          Green
+        </summary>
         <ul class="flex flex-wrap gap-4 mt-2">
-          <li class="relative w-8 h-8 rounded-full bg-cl-green-0 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-green-0 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               0
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-green-50 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-green-50 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               50
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-green-100 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-green-100 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               100
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-green-150 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-green-150 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               150
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-green-200 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-green-200 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               200
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-green-300 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-green-300 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               300
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-green-400 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-green-400 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               400
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-green-500 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-green-500 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               500
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-green-600 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-green-600 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               600
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-green-700 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-green-700 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               700
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-green-800 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-green-800 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               800
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-green-900 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-green-900 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               900
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-green-950 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-green-950 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               950
             </div>
@@ -358,69 +377,71 @@ import { Meta } from "@storybook/blocks";
         </ul>
       </details>
       <details open>
-        <summary class="font-semibold text-lg border-0">Blue</summary>
+        <summary class="font-semibold text-lg border-0 cursor-pointer">
+          Blue
+        </summary>
         <ul class="flex flex-wrap gap-4 mt-2">
-          <li class="relative w-8 h-8 rounded-full bg-cl-blue-0 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-blue-0 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               0
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-blue-50 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-blue-50 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               50
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-blue-100 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-blue-100 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               100
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-blue-150 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-blue-150 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               150
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-blue-200 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-blue-200 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               200
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-blue-300 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-blue-300 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               300
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-blue-400 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-blue-400 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               400
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-blue-500 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-blue-500 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               500
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-blue-600 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-blue-600 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               600
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-blue-700 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-blue-700 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               700
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-blue-800 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-blue-800 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               800
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-blue-900 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-blue-900 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               900
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-blue-950 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-blue-950 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               950
             </div>
@@ -428,69 +449,71 @@ import { Meta } from "@storybook/blocks";
         </ul>
       </details>
       <details open>
-        <summary class="font-semibold text-lg border-0">Purple</summary>
+        <summary class="font-semibold text-lg border-0 cursor-pointer">
+          Purple
+        </summary>
         <ul class="flex flex-wrap gap-4 mt-2">
-          <li class="relative w-8 h-8 rounded-full bg-cl-purple-0 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-purple-0 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               0
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-purple-50 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-purple-50 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               50
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-purple-100 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-purple-100 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               100
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-purple-150 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-purple-150 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               150
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-purple-200 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-purple-200 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               200
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-purple-300 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-purple-300 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-black">
               300
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-purple-400 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-purple-400 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               400
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-purple-500 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-purple-500 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               500
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-purple-600 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-purple-600 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               600
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-purple-700 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-purple-700 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               700
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-purple-800 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-purple-800 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               800
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-purple-900 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-purple-900 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               900
             </div>
           </li>
-          <li class="relative w-8 h-8 rounded-full bg-cl-purple-950 transition-transform hover:scale-110 hover:shadow-md">
+          <li class="relative w-8 h-8 rounded-full bg-cl-purple-950 transition-transform hover:scale-110 hover:shadow-lg hover:shadow-slate-500/50">
             <div class="absolute inset-0 flex items-center justify-center text-xs opacity-30 transition-opacity hover:opacity-100 text-white">
               950
             </div>
@@ -502,6 +525,10 @@ import { Meta } from "@storybook/blocks";
 </main>
 <style>
   {`
+    .sbdocs {
+      background: #0B0F2B;
+      color: #ffffff;
+    }
     #cl-doc {
       // Reset
       *:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
@@ -523,8 +550,10 @@ import { Meta } from "@storybook/blocks";
         border-collapse: collapse;
       }
       p {
+        display: inline-block;
         color: inherit;
+        font-size: inherit;
       }
     }
-`}
+  `}
 </style>
