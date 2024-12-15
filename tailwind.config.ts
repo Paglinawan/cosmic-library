@@ -241,6 +241,10 @@ export default {
         white: primitiveColors.neutral[0],
         disabled: primitiveColors.neutral[150],
       },
+      fontFamily: {
+        sans: ["var(--font-noto-sans-jp)", "sans-serif"],
+        garamond: ["var(--font-garamond)", "serif"],
+      },
     },
   },
   plugins: [],
