@@ -1,6 +1,7 @@
 import { Meta } from "@storybook/blocks";
 import Image from "next/image";
 import Stellar from "./images/bg.svg";
+import CLStellar from "./images/logo-cl-stellar.svg";
 
 <Meta title="CL Stellar" />
 
@@ -10,7 +11,16 @@ import Stellar from "./images/bg.svg";
   alt="Stories touch you, linking the cosmos."
 />
 <main id="cl-doc" class="relative z-20">
-  <h1 class="mb-8 font-semibold text-4xl text-inherit">CL Stellar</h1>
+  <h1 class="mb-12">
+    <Image
+      width={280}
+      height={0}
+      layout="intrinsic"
+      class=""
+      src={CLStellar}
+      alt="CL Stellar"
+    />
+  </h1>
   <section>
     <h2 class="font-semibold text-2xl border-0 text-inherit">
       ❖ Primitive Colors
