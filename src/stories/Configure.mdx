@@ -539,31 +539,28 @@ import CLStellar from "./images/logo-cl-stellar.svg";
       background: #0B0F2B;
       color: #ffffff;
     }
-    #cl-doc {
-      // Reset
-      *:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
-        all: unset;
-        display: revert;
-      }
-      *,*::before,*::after {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      ol,ul,li {
-        list-style: none;
-      }
-      img {
-        max-width: 100%;
-      }
-      table {
-        border-collapse: collapse;
-      }
-      p {
-        display: inline-block;
-        color: inherit;
-        font-size: inherit;
-      }
+    .sbdocs *:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+      all: unset;
+      display: revert;
+    }
+    .sbdocs *,.sbdocs *::before,.sbdocs *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .sbdocs ol,.sbdocs ul,.sbdocs li {
+      list-style: none;
+    }
+    .sbdocs img {
+      max-width: 100%;
+    }
+    .sbdocs table {
+      border-collapse: collapse;
+    }
+    .sbdocs p {
+      display: inline-block;
+      color: inherit !important;
+      font-size: inherit;
     }
   `}
 </style>

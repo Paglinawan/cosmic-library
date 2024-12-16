@@ -2,8 +2,8 @@
   <style>
     .star {
       fill: rgba(255, 255, 255, 0.8);
-      animation: twinkle 3s infinite ease-in-out, move 5s infinite alternate ease-in-out;
-      filter: url(#shadow);
+      animation: twinkle 3s infinite linear, move 5s infinite alternate linear;
+      will-change: transform, opacity;
     }
     @keyframes twinkle {
       0%, 100% {
@@ -15,7 +15,7 @@
     }
     @keyframes move {
       0% {
-        transform: translate(0, 0);
+        transform: translate(0px, 0px);
       }
       100% {
         transform: translate(var(--dx), var(--dy));
