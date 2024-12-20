@@ -2,6 +2,7 @@ import { Meta } from "@storybook/blocks";
 import Image from "next/image";
 import Stellar from "./images/bg.svg";
 import CLStellar from "./images/logo-cl-stellar.svg";
+import PaglinawanLogo from "./images/paglinawan.svg";
 
 <Meta title="CL Stellar" />
 
@@ -27,7 +28,7 @@ import CLStellar from "./images/logo-cl-stellar.svg";
     </h2>
     <div class="grid gap-6 mt-6">
       <details open>
-        <summary class="font-semibold text-lg border-0 cursor-pointer">
+        <summary class="list-none flex items-center gap-2 font-semibold text-lg border-0 cursor-pointer">
           Neutral
         </summary>
         <ul class="flex flex-wrap gap-4 mt-2">
@@ -99,7 +100,7 @@ import CLStellar from "./images/logo-cl-stellar.svg";
         </ul>
       </details>
       <details open>
-        <summary class="font-semibold text-lg border-0 cursor-pointer">
+        <summary class="list-none flex items-center gap-2 font-semibold text-lg border-0 cursor-pointer">
           Red
         </summary>
         <ul class="flex flex-wrap gap-4 mt-2">
@@ -171,7 +172,7 @@ import CLStellar from "./images/logo-cl-stellar.svg";
         </ul>
       </details>
       <details open>
-        <summary class="font-semibold text-lg border-0 cursor-pointer">
+        <summary class="list-none flex items-center gap-2 font-semibold text-lg border-0 cursor-pointer">
           Orange
         </summary>
         <ul class="flex flex-wrap gap-4 mt-2">
@@ -243,7 +244,7 @@ import CLStellar from "./images/logo-cl-stellar.svg";
         </ul>
       </details>
       <details open>
-        <summary class="font-semibold text-lg border-0 cursor-pointer">
+        <summary class="list-none flex items-center gap-2 font-semibold text-lg border-0 cursor-pointer">
           Yellow
         </summary>
         <ul class="flex flex-wrap gap-4 mt-2">
@@ -315,7 +316,7 @@ import CLStellar from "./images/logo-cl-stellar.svg";
         </ul>
       </details>
       <details open>
-        <summary class="font-semibold text-lg border-0 cursor-pointer">
+        <summary class="list-none flex items-center gap-2 font-semibold text-lg border-0 cursor-pointer">
           Green
         </summary>
         <ul class="flex flex-wrap gap-4 mt-2">
@@ -387,7 +388,7 @@ import CLStellar from "./images/logo-cl-stellar.svg";
         </ul>
       </details>
       <details open>
-        <summary class="font-semibold text-lg border-0 cursor-pointer">
+        <summary class="list-none flex items-center gap-2 font-semibold text-lg border-0 cursor-pointer">
           Blue
         </summary>
         <ul class="flex flex-wrap gap-4 mt-2">
@@ -459,7 +460,7 @@ import CLStellar from "./images/logo-cl-stellar.svg";
         </ul>
       </details>
       <details open>
-        <summary class="font-semibold text-lg border-0 cursor-pointer">
+        <summary class="list-none flex items-center gap-2 font-semibold text-lg border-0 cursor-pointer">
           Purple
         </summary>
         <ul class="flex flex-wrap gap-4 mt-2">
@@ -532,35 +533,57 @@ import CLStellar from "./images/logo-cl-stellar.svg";
       </details>
     </div>
   </section>
+  <footer class="flex gap-4 mt-10 pt-3 border-t border-cl-neutral-800">
+    <Image
+      class="ft-logo w-6 h-6 object-contain"
+      src={PaglinawanLogo}
+      alt="Paglinawan"
+    />
+    <ul class="flex items-center gap-8">
+      <li><a href="https://github.com/Paglinawan" target="_blank" class="font-semibold text-cl-neutral-0 cursor-pointer hover:opacity-40 transition duration-150 ease-out">GitHub</a></li>
+      <li class="relative"><div class="absolute top-0 bottom-0 -left-4 bg-cl-neutral-800 w-px"></div><a href="https://www.linkedin.com/in/paglinawan0520/" target="_blank" class="font-semibold text-cl-neutral-0 cursor-pointer hover:opacity-40 transition duration-150 ease-out">LinkedIn</a></li>
+      <li class="relative"><div class="absolute top-0 bottom-0 -left-4 bg-cl-neutral-800 w-px"></div><a href="https://www.behance.net/mihohoriuchi" target="_blank" class="font-semibold text-cl-neutral-0 cursor-pointer hover:opacity-40 transition duration-150 ease-out">Behance</a></li>
+    </ul>
+  </footer>
 </main>
 <style>
   {`
-    .sbdocs {
-      background: #0B0F2B;
-      color: #ffffff;
-    }
-    .sbdocs *:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
-      all: unset;
-      display: revert;
-    }
-    .sbdocs *,.sbdocs *::before,.sbdocs *::after {
+    /* Style */
+    #cl-doc *,#cl-doc *::before,#cl-doc *::after {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-    .sbdocs ol,.sbdocs ul,.sbdocs li {
+    #cl-doc ol,#cl-doc ul,#cl-doc li {
       list-style: none;
     }
-    .sbdocs img {
+    #cl-doc img {
       max-width: 100%;
     }
-    .sbdocs table {
+    #cl-doc table {
       border-collapse: collapse;
     }
-    .sbdocs p {
+    #cl-doc p {
       display: inline-block;
       color: inherit !important;
       font-size: inherit;
     }
-  `}
+    #cl-doc summary::-webkit-details-marker {
+      display:none;
+    }
+
+    /* Style */
+    .sbdocs {
+      background: #0B0F2B;
+      color: #ffffff;
+    }
+    #cl-doc details summary::before{
+      content: "+";
+    }
+    #cl-doc details[open] summary::before{
+      content: "-";
+    }
+
+`}
+
 </style>
