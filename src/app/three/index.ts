@@ -56,7 +56,9 @@ export function createBg() {
 
   // Controls
   const controls = new OrbitControls(camera, renderer.domElement);
-  controls.addEventListener('change', function() { renderer.render(scene, camera); });
+  controls.addEventListener("change", function () {
+    renderer.render(scene, camera);
+  });
   controls.enableDamping = true;
   controls.enableZoom = false;
   controls.enablePan = false;
@@ -68,7 +70,7 @@ export function createBg() {
     particlesGeometry.rotateX(0.001);
     particlesGeometry.rotateY(0.001);
     particlesGeometry.rotateZ(0.001);
-    particlesGeometry.needsUpdate = true;
+    particlesGeometry.attributes.position.needsUpdate = true;
 
     renderer.render(scene, camera);
     requestAnimationFrame(animate);
