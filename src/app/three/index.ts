@@ -56,7 +56,7 @@ export function createBg() {
 
   // Controls
   const controls = new OrbitControls(camera, renderer.domElement);
-  controls.addEventListener("change", function () {
+  (controls as any).addEventListener("change", function () {
     renderer.render(scene, camera);
   });
   controls.enableDamping = true;
