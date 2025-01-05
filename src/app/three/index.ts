@@ -56,17 +56,19 @@ export function createBg() {
 
   // Controls
   const controls = new OrbitControls(camera, renderer.domElement);
+  controls.addEventListener('change', function() { renderer.render(scene, camera); });
   controls.enableDamping = true;
+  controls.enableZoom = false;
+  controls.enablePan = false;
 
   // Animation
   const animate = () => {
     controls.update();
 
-    const time = Date.now() * 0.00005;
-    const radius = 5;
-    camera.position.x = radius * Math.cos(time);
-    camera.position.z = radius * Math.sin(time);
-    camera.lookAt(scene.position);
+    particlesGeometry.rotateX(0.001);
+    particlesGeometry.rotateY(0.001);
+    particlesGeometry.rotateZ(0.001);
+    particlesGeometry.needsUpdate = true;
 
     renderer.render(scene, camera);
     requestAnimationFrame(animate);
