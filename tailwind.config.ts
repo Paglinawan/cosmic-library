@@ -242,8 +242,8 @@ export default {
         disabled: primitiveColors.neutral[150],
       },
       fontFamily: {
-        sans: ["var(--font-noto-sans-jp)", "sans-serif"],
-        garamond: ["var(--font-garamond)", "serif"],
+        jp: ["var(--font-noto-sans-jp)", "sans-serif"],
+        en: ["var(--font-inconsolata)", "serif"],
       },
     },
   },
