@@ -286,7 +286,21 @@ export default {
           },
         },
       },
-      backgroundColor: {},
+      backgroundColor: {
+        control: {
+          switch: {
+            thumb: {
+              DEFAULT: primitiveColors.neutral[0],
+              disabled: primitiveColors.neutral[400],
+            },
+            track: {
+              inactive: primitiveColors.neutral[500],
+              disabled: primitiveColors.neutral[700],
+              active: primitiveColors.yellow[500],
+            },
+          },
+        },
+      },
       textColor: {},
       fontFamily: {
         jp: ["var(--font-noto-sans-jp)", "sans-serif"],
