@@ -286,21 +286,8 @@ export default {
           },
         },
       },
-      backgroundColor: {
-        "button-primary": primitiveColors.red[700],
-        "button-primary-hover": primitiveColors.red[800],
-        "button-secondary": primitiveColors.purple[700],
-        "button-secondary-hover": primitiveColors.purple[800],
-        "button-disabled": primitiveColors.neutral[600],
-      },
-      textColor: {
-        primary: primitiveColors.red[200],
-        "primary-hover": primitiveColors.red[300],
-        secondary: primitiveColors.purple[400],
-        "secondary-hover": primitiveColors.purple[600],
-        white: primitiveColors.neutral[0],
-        disabled: primitiveColors.neutral[150],
-      },
+      backgroundColor: {},
+      textColor: {},
       fontFamily: {
         jp: ["var(--font-noto-sans-jp)", "sans-serif"],
         en: ["var(--font-inconsolata)", "serif"],
