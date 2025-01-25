@@ -26,8 +26,8 @@ const Switch: React.FC<SwitchProps> = ({ disabled = false }) => {
           className={classNames(
             "absolute h-5 w-5 rounded-full transition-all",
             {
-              "left-0 bg-control-switch-thumb": !isActive,
-              "left-full -translate-x-full bg-control-switch-thumb": isActive,
+              "left-0 bg-control-switch-thumb": isActive,
+              "left-full -translate-x-full bg-control-switch-thumb": !isActive,
               "bg-control-switch-thumb-disabled": disabled,
             }
           )}
