@@ -56,10 +56,6 @@ export function createBg() {
 
   // Controls
   const controls = new OrbitControls(camera, renderer.domElement);
-  // @ts-expect-error
-  controls.addEventListener("change", function () {
-    renderer.render(scene, camera);
-  });
   controls.enableDamping = true;
   controls.enableZoom = false;
   controls.enablePan = false;
