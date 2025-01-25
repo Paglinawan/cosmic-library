@@ -13,6 +13,7 @@
     "chromatic": "npx chromatic --project-token=$(npm run get-chromatic-token --silent)"
   },
   "dependencies": {
+    "@svgr/webpack": "^8.1.0",
     "autoprefixer": "^10.4.20",
     "classnames": "^2.5.1",
     "next": "15.0.3",
