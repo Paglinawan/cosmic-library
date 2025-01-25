@@ -56,7 +56,7 @@ export function createBg() {
 
   // Controls
   const controls = new OrbitControls(camera, renderer.domElement);
-  // @ts-ignore
+  // @ts-expect-error
   controls.addEventListener("change", function () {
     renderer.render(scene, camera);
   });
