@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  assetPrefix: "/cosmic-library",
+  assetPrefix:
+    process.env.NODE_ENV === "production" ? "/cosmic-library" : undefined,
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
