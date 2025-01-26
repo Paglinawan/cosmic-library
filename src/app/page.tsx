@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { createBg } from "./three";
+import Image from "next/image";
 import Logo from "@/app/assets/images/logo.svg";
 
 export default function Home() {
@@ -10,7 +11,7 @@ export default function Home() {
   }, []);
   return (
     <div className="fixed left-4 top-4 z-10">
-      <Logo className="w-16 h-16" />
+      <Image src={Logo} alt="Logo" width={64} height={64} />
     </div>
   );
 }
