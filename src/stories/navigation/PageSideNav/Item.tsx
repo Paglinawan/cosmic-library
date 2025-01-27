@@ -1,13 +1,13 @@
 import React from "react";
 import classNames from "classnames";
 
-interface SwitchProps {
+interface Props {
   label: string;
   isActive: boolean;
   onClick: () => void;
 }
 
-const Item: React.FC<SwitchProps> = ({ label, isActive, onClick }) => {
+const Item: React.FC<Props> = ({ label, isActive, onClick }) => {
   return (
     <button
       type="button"

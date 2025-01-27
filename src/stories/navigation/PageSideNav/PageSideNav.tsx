@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Item from "./Item";
 import classNames from "classnames";
 
-interface SwitchProps {
+interface Props {
   filmTags: {
     id: number;
     label: string;
@@ -12,7 +12,7 @@ interface SwitchProps {
   maxDisplayCount: number;
 }
 
-const PageSideNav: React.FC<SwitchProps> = ({ filmTags, maxDisplayCount }) => {
+const PageSideNav: React.FC<Props> = ({ filmTags, maxDisplayCount }) => {
   const [tagsState, setTagsState] = useState(filmTags);
 
   useEffect(() => {

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import classNames from "classnames";
 
-interface SwitchProps {
+interface Props {
   disabled?: boolean;
 }
 
-const Switch: React.FC<SwitchProps> = ({ disabled = false }) => {
+const Switch: React.FC<Props> = ({ disabled = false }) => {
   const [isActive, setIsActive] = useState(false);
 
   return (
