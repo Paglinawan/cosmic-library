@@ -301,7 +301,10 @@ export default {
           },
         },
       },
-      textColor: {},
+      textColor: {
+        body: primitiveColors.neutral[0],
+        subtle: primitiveColors.neutral[400],
+      },
       fontFamily: {
         jp: ["var(--font-noto-sans-jp)", "sans-serif"],
         en: ["var(--font-inconsolata)", "serif"],
