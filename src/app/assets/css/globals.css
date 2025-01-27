@@ -43,3 +43,7 @@
 body {
   font-family: var(--font-noto-sans-jp);
 }
+
+#storybook-root {
+  max-width: 100%;
+}
