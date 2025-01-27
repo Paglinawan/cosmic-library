@@ -301,6 +301,9 @@ export default {
           },
         },
       },
+      backgroundImage: {
+        "navigation-page-sticky-nav": `linear-gradient(to bottom, ${primitiveColors.tint[0]}, ${primitiveColors.tint[150]})`,
+      },
       textColor: {
         body: primitiveColors.neutral[0],
         subtle: primitiveColors.neutral[400],
