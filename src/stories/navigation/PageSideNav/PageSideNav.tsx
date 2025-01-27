@@ -15,10 +15,6 @@ interface Props {
 const PageSideNav: React.FC<Props> = ({ filmTags, maxDisplayCount }) => {
   const [tagsState, setTagsState] = useState(filmTags);
 
-  useEffect(() => {
-    handleSwap();
-  }, [maxDisplayCount]);
-
   const handleSwap = () => {
     const nonDisplayTags = tagsState.filter(
       (tag) => !tag.isActive && !tag.isDisplay
@@ -42,6 +38,10 @@ const PageSideNav: React.FC<Props> = ({ filmTags, maxDisplayCount }) => {
       })
     );
   };
+
+  useEffect(() => {
+    handleSwap();
+  }, [handleSwap, maxDisplayCount]);
 
   const handleReset = () => {
     setTagsState((prev) =>
