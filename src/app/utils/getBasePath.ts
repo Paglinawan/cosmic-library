@@ -1,3 +1,4 @@
 export const getBasePath = () => {
-  return process.env.NEXT_PUBLIC_BASE_PATH || "";
+  if (process.env.NODE_ENV === "development") return "";
+  return "/cosmic-library";
 };
