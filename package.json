@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:gh": "next build && next export",
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
@@ -33,6 +34,7 @@
     "@storybook/nextjs": "^8.5.2",
     "@storybook/react": "^8.5.2",
     "@storybook/test": "^8.5.2",
+    "@types/next": "^9.0.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
