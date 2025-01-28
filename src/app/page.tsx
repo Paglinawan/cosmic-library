@@ -18,9 +18,6 @@ export default function Home() {
         width={64}
         height={64}
       />
-      <div className="text-red-200 w-10 h-10">
-        <IconFilm />
-      </div>
     </div>
   );
 }
