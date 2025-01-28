@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import { createBg } from "./three";
-import Logo from "./Svg/Logo";
+import Logo from "./Svg/LogoAnimated";
 
 export default function Home() {
   useEffect(() => {
