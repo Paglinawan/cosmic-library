@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import Item from "./Item";
 import classNames from "classnames";
 
@@ -15,7 +15,7 @@ interface Props {
 const PageSideNav: React.FC<Props> = ({ filmTags, maxDisplayCount }) => {
   const [tagsState, setTagsState] = useState(filmTags);
 
-  const handleSwap = () => {
+  const handleSwap = useCallback(() => {
     const nonDisplayTags = tagsState.filter(
       (tag) => !tag.isActive && !tag.isDisplay
     );
@@ -37,7 +37,7 @@ const PageSideNav: React.FC<Props> = ({ filmTags, maxDisplayCount }) => {
           : currentTag;
       })
     );
-  };
+  }, []);
 
   useEffect(() => {
     handleSwap();
