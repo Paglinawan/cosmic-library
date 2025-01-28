@@ -37,7 +37,7 @@ const PageSideNav: React.FC<Props> = ({ filmTags, maxDisplayCount }) => {
           : currentTag;
       })
     );
-  }, []);
+  }, [maxDisplayCount, tagsState]);
 
   useEffect(() => {
     handleSwap();
