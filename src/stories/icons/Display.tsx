@@ -1,6 +1,5 @@
 import classNames from "classnames";
-import IconFilm from "../../app/Svg/IconFilm";
-import IconMenu from "../../app/Svg/IconMenu";
+import IconTranslate from "../../app/Svg/IconTranslate";
 
 interface Props {
   classSize: string;
@@ -15,13 +14,7 @@ const Navigation: React.FC<Props> = ({ classSize, classColor, styleColor }) => {
         className={classNames(classSize, classColor)}
         style={{ color: styleColor }}
       >
-        <IconFilm />
-      </li>
-      <li
-        className={classNames(classSize, classColor)}
-        style={{ color: styleColor }}
-      >
-        <IconMenu />
+        <IconTranslate />
       </li>
     </ul>
   );
