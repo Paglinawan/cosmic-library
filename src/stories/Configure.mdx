@@ -2,6 +2,7 @@ import { Meta } from "@storybook/blocks";
 import Image from "next/image";
 import Stellar from "./images/bg.svg";
 import CLStellar from "./images/logo-cl-stellar.svg";
+import LogoSymbol from "./images/logo-symbol.svg";
 import PaglinawanLogo from "./images/paglinawan.svg";
 
 <Meta title="CL Stellar" />
@@ -12,9 +13,15 @@ import PaglinawanLogo from "./images/paglinawan.svg";
   alt="Stories touch you, linking the cosmos."
 />
 <main id="cl-doc" class="relative z-20">
-  <h1 class="mb-12">
+  <h1 class="mb-12 flex gap-6 items-end">
     <Image
-      width={280}
+      width={44}
+      height={44}
+      src={LogoSymbol}
+      alt="CL Stellar"
+    />
+    <Image
+      width={260}
       height={0}
       layout="intrinsic"
       class=""
@@ -687,6 +694,7 @@ import PaglinawanLogo from "./images/paglinawan.svg";
       <li><a href="https://github.com/Paglinawan" target="_blank" class="font-semibold text-cl-neutral-0 cursor-pointer hover:opacity-40 transition duration-150 ease-out">GitHub</a></li>
       <li class="relative"><div class="absolute top-0 bottom-0 -left-4 bg-cl-neutral-800 w-px"></div><a href="https://www.linkedin.com/in/paglinawan0520/" target="_blank" class="font-semibold text-cl-neutral-0 cursor-pointer hover:opacity-40 transition duration-150 ease-out">LinkedIn</a></li>
       <li class="relative"><div class="absolute top-0 bottom-0 -left-4 bg-cl-neutral-800 w-px"></div><a href="https://www.behance.net/mihohoriuchi" target="_blank" class="font-semibold text-cl-neutral-0 cursor-pointer hover:opacity-40 transition duration-150 ease-out">Behance</a></li>
+      <li class="relative"><div class="absolute top-0 bottom-0 -left-4 bg-cl-neutral-800 w-px"></div><a href="https://www.figma.com/community/file/1459082338548099105" target="_blank" class="font-semibold text-cl-neutral-0 cursor-pointer hover:opacity-40 transition duration-150 ease-out">Figma</a></li>
     </ul>
   </footer>
 </main>
