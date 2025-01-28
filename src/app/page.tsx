@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { createBg } from "./three";
 import Image from "next/image";
 import { getBasePath } from "./utils/getBasePath";
+import IconFilm from "./assets/icons/IconFilm.svg";
 
 export default function Home() {
   useEffect(() => {
@@ -17,6 +18,9 @@ export default function Home() {
         width={64}
         height={64}
       />
+      <div className="text-white w-24 h-24">
+        <IconFilm classNames="w-full object-contain" />
+      </div>
     </div>
   );
 }
