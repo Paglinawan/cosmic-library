@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import { createBg } from "./three";
 import Image from "next/image";
 import { getBasePath } from "./utils/getBasePath";
-import IconFilm from "./Svg/IconFilm";
 
 export default function Home() {
   useEffect(() => {
