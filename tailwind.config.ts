@@ -285,10 +285,26 @@ export default {
             950: primitiveColors.shade[950],
           },
         },
+        display: {
+          DEFAULT: primitiveColors.neutral[0],
+          classic: primitiveColors.yellow[500],
+          favorite: primitiveColors.red[150],
+          star: primitiveColors.yellow[400],
+        },
       },
       borderColor: {
         navigation: {
           "global-nav": primitiveColors.neutral[700],
+        },
+        display: {
+          tag: {
+            DEFAULT: primitiveColors.neutral[600],
+            classic: primitiveColors.yellow[500],
+            favorite: primitiveColors.red[150],
+          },
+          "film-card": {
+            DEFAULT: primitiveColors.neutral[700],
+          },
         },
       },
       backgroundColor: {
@@ -297,6 +313,14 @@ export default {
             DEFAULT: primitiveColors.neutral[900],
             hover: primitiveColors.tint[100],
             backdrop: primitiveColors.shade[400],
+          },
+        },
+        display: {
+          "global-nav": {
+            DEFAULT: primitiveColors.neutral[900],
+          },
+          "button-icon": {
+            DEFAULT: primitiveColors.neutral[900],
           },
         },
         control: {
