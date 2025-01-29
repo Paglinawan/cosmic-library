@@ -8,7 +8,6 @@ const meta = {
     layout: "centered",
     backgrounds: { default: "dark" },
   },
-  tags: ["autodocs"],
   argTypes: {
     disabled: {
       description: "無効化にする",

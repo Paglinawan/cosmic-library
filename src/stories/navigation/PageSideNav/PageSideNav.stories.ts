@@ -9,7 +9,6 @@ const meta = {
     layout: "centered",
     backgrounds: { default: "dark" },
   },
-  tags: ["autodocs"],
   argTypes: {
     filmTags: {
       control: {

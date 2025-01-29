@@ -2,4 +2,4 @@
 
 # Cosmic Library ☾ CL Stellar
 
-[GitHub Page](https://paglinawan.github.io/cosmic-library/) | [Storybook](https://675b6a21c2ce20745142c486-pnslqzieti.chromatic.com) | [Figma](https://www.figma.com/community/file/1459082338548099105/cl-stellar)
+[GitHub Page](https://paglinawan.github.io/cosmic-library/) | [Storybook](https://675b6a21c2ce20745142c486-eczkbkblew.chromatic.com) | [Figma](https://www.figma.com/community/file/1459082338548099105/cl-stellar)
