@@ -2,9 +2,7 @@ import React from "react";
 import IconMenu from "../../../app/Svg/IconMenu";
 import Logo from "../../../app/Svg/LogoAnimated";
 
-interface Props {}
-
-const Header: React.FC<Props> = ({}) => {
+const Header = ({}) => {
   return (
     <header className="px-4 py-3">
       <div className="flex gap-4 items-center">
