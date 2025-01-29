@@ -175,3 +175,135 @@ export const film_tags = [
     label_en: "History",
   },
 ];
+export const countries = [
+  {
+    id: 1,
+    label: "アメリカ合衆国",
+    label_en: "United States",
+  },
+  {
+    id: 2,
+    label: "フランス",
+    label_en: "France",
+  },
+  {
+    id: 3,
+    label: "日本",
+    label_en: "Japan",
+  },
+  {
+    id: 4,
+    label: "イギリス",
+    label_en: "United Kingdom",
+  },
+  {
+    id: 5,
+    label: "韓国",
+    label_en: "South Korea",
+  },
+  {
+    id: 6,
+    label: "中国",
+    label_en: "China",
+  },
+  {
+    id: 7,
+    label: "イタリア",
+    label_en: "Italy",
+  },
+  {
+    id: 8,
+    label: "ドイツ",
+    label_en: "Germany",
+  },
+  {
+    id: 9,
+    label: "スペイン",
+    label_en: "Spain",
+  },
+  {
+    id: 10,
+    label: "カナダ",
+    label_en: "Canada",
+  },
+  {
+    id: 11,
+    label: "メキシコ",
+    label_en: "Mexico",
+  },
+  {
+    id: 12,
+    label: "インド",
+    label_en: "India",
+  },
+  {
+    id: 13,
+    label: "ブラジル",
+    label_en: "Brazil",
+  },
+  {
+    id: 14,
+    label: "オーストラリア",
+    label_en: "Australia",
+  },
+  {
+    id: 15,
+    label: "アルゼンチン",
+    label_en: "Argentina",
+  },
+  {
+    id: 16,
+    label: "ロシア",
+    label_en: "Russia",
+  },
+  {
+    id: 17,
+    label: "トルコ",
+    label_en: "Turkey",
+  },
+  {
+    id: 18,
+    label: "スウェーデン",
+    label_en: "Sweden",
+  },
+  {
+    id: 19,
+    label: "ベルギー",
+    label_en: "Belgium",
+  },
+  {
+    id: 20,
+    label: "オランダ",
+    label_en: "Netherlands",
+  },
+  {
+    id: 21,
+    label: "ポルトガル",
+    label_en: "Portugal",
+  },
+  {
+    id: 22,
+    label: "チェコ",
+    label_en: "Czechia",
+  },
+  {
+    id: 23,
+    label: "ギリシャ",
+    label_en: "Greece",
+  },
+  {
+    id: 24,
+    label: "デンマーク",
+    label_en: "Denmark",
+  },
+  {
+    id: 25,
+    label: "香港",
+    label_en: "Hong Kong",
+  },
+  {
+    id: 26,
+    label: "アルジェリア",
+    label_en: "Algeria",
+  },
+];

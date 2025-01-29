@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import FilmCard from "./FilmCard";
-import { film_tags as filmTags } from "./data";
+import { film_tags as filmTags, countries } from "./data";
 
 const meta = {
   title: "display/FilmCard",
@@ -13,7 +13,10 @@ const meta = {
     title: { control: "text" },
     review: { control: "number" },
     year: { control: "number" },
-    country: { control: "text" },
+    country: {
+      control: "select",
+      options: countries.map((tag) => tag.label),
+    },
     comment: { control: "text" },
     director: { control: "text" },
     cast: { control: "text" },
@@ -31,14 +34,14 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    title: "ライフ・イズ・ビューティフル",
+    title: "オリバー!",
     review: 3,
-    year: 1994,
-    country: "アメリカ合衆国",
+    year: 1968,
+    country: "イギリス",
     comment:
-      "「ライフ・イズ・ビューティフル」は、ユーモアと悲しみを巧みに融合させた感動的な映画です。戦争の恐怖の中での父親の愛と犠牲の物語は、心に響き、感動を与えます。特にロベルト・ベニーニの演技は素晴らしいです。この映画は人間の精神の強さを思い出させ、長く心に残ります。",
-    director: "ロベルト・ベニーニ",
-    cast: "ロベルト・ベニーニ、ニコレッタ・ブラスキ、ジョルジョ・カンタリーニ",
+      "華やかなダンスと名曲が溢れる名作ミュージカル。孤児オリバーの波乱に満ちた旅が、心を打つ感動のストーリーとともに描かれる。",
+    director: "キャロル・リード",
+    cast: "マーク・レスター、ジャック・ワイルド、シャニ・ウォリス",
     isClassic: true,
     isFavorite: true,
     tags: [],
