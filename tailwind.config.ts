@@ -286,7 +286,19 @@ export default {
           },
         },
       },
+      borderColor: {
+        navigation: {
+          "global-nav": primitiveColors.neutral[700],
+        },
+      },
       backgroundColor: {
+        navigation: {
+          "global-nav": {
+            DEFAULT: primitiveColors.neutral[900],
+            hover: primitiveColors.tint[100],
+            backdrop: primitiveColors.shade[400],
+          },
+        },
         control: {
           switch: {
             thumb: {
